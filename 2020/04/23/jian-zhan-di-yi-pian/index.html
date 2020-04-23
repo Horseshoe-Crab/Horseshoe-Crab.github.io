@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, Horseshoe-Crab&#39;s blog">
+    <meta name="keywords" content="建站第一篇, Horseshoe-Crab&#39;s blog">
     <meta name="description" content="Just4Fun">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test | Horseshoe-Crab&#39;s blog</title>
+    <title>建站第一篇 | Horseshoe-Crab&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">建站第一篇</h1>
                 </div>
             </div>
         </div>
@@ -459,7 +459,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    448
                 </div>
                 
 
@@ -476,7 +476,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="建站第一篇"><a href="#建站第一篇" class="headerlink" title="建站第一篇"></a>建站第一篇</h1><p>其实非常早就折腾过建博客的事情，当时是抱着给小女朋友建立一个甜甜的爱情网站的想法的，后面分手了大受打击，加上也不好备案就暂时搁置了</p>
+<p>那么我为什么还要重新捡起建站这回事呢？是因为最近找工作非常失败，面试一问三不知，就在这网站上更新一点个人学习的感悟，摄影作品，抒发些情感，写点书评之类的</p>
+<p>下面开始讲下建站踩过的坑</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr>
+<p>首先可以看下下面这篇文章：<br><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></p>
+<p>基本是按照文章中的来的</p>
+<p>自己做的和文章中不同的东西有：</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>换了一个主题，matery，可以到hexo的官网上下载，下载完后打开REAEMD.md,里面有很多新建分类，标签等操作，按部就班添加即可。</p>
+<p>踩坑点：添加完后hexo重新部署的时候可能会ERROR Process failed 如果出现这种情况，查看自己新建的md文件，冒号后面要有个空格，不然不符合YAML语法</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>在hexo的_config.yml文件中，上文链接的repo部分是用HTTPS方式访问github的，这样导致deploy的时候每次都要输入用户名和密码，即使添加了SSH KEY也只是验证https。</p>
+<p>那么我们如何设置才能免除输密码的麻烦呢？</p>
+<p><code>deploy:</code></p>
+<p>  <code>type: git</code></p>
+<pre><code>`repository: git@github.com:username/username.github.io.git`
+
+  `branch: master`
+
+  只需要把_config.yml中deploy的部分改成上面的方式即可，username就是你自己的github用户名
+
+  这几行的作用是把HTTPS方式改成了SSH方式</code></pre><h2 id="初次写作，先写这么多，剩下的慢慢补上。"><a href="#初次写作，先写这么多，剩下的慢慢补上。" class="headerlink" title="初次写作，先写这么多，剩下的慢慢补上。"></a>初次写作，先写这么多，剩下的慢慢补上。</h2>
             </div>
             <hr/>
 
@@ -501,7 +520,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://horseshoe-crab.github.io/2020/04/23/test/">https://horseshoe-crab.github.io/2020/04/23/test/</a>
+                    <a href="https://horseshoe-crab.github.io/2020/04/23/jian-zhan-di-yi-pian/">https://horseshoe-crab.github.io/2020/04/23/jian-zhan-di-yi-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -578,9 +597,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/04/23/jian-zhan-di-yi-pian/">
                     <div class="card-image">
@@ -599,9 +619,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -610,6 +630,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -617,7 +638,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/04/23/test/">
@@ -647,7 +668,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
