@@ -487,11 +487,12 @@
 <p>踩坑点：添加完后hexo重新部署的时候可能会ERROR Process failed 如果出现这种情况，查看自己新建的md文件，冒号后面要有个空格，不然不符合YAML语法</p>
 <h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>在hexo的_config.yml文件中，上文链接的repo部分是用HTTPS方式访问github的，这样导致deploy的时候每次都要输入用户名和密码，即使添加了SSH KEY也只是验证https。</p>
 <p>那么我们如何设置才能免除输密码的麻烦呢？</p>
-<p><code>deploy:</code></p>
-<p>  <code>type: git</code></p>
-<pre><code>`repository: git@github.com:username/username.github.io.git`
+<p>`deploy:</p>
+<p>  type: git</p>
+<pre><code>repository: git@github.com:username/username.github.io.git
 
-  `branch: master`
+  branch: master`
+
 
   只需要把_config.yml中deploy的部分改成上面的方式即可，username就是你自己的github用户名
 
